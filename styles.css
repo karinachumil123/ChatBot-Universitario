@@ -1,6 +1,6 @@
-/* Estilos para el body */
+/* Estilos existentes (sin cambios) */
 body {
-    background-image: url('/images/resized_Chatobots-legal-key-issues.jpg');
+    background-image: url('./images/resized_Chatobots-legal-key-issues.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,5 +102,39 @@ body {
 
 .emoji {
     font-size: 24px;
-    align-self: flex-start; /* Alinea el emoji con la primera línea del texto */
+    align-self: flex-start;
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .chat-container {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+    }
+
+    .message p {
+        max-width: 80%; /* Aumenta el ancho máximo de los mensajes */
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        margin-right: 2%;
+        margin-left: 2%;
+        width: 96%; /* Ajusta el ancho para pantallas muy pequeñas */
+    }
+
+    .message p {
+        max-width: 90%; /* Aumenta aún más el ancho máximo de los mensajes */
+    }
+
+    #user-input {
+        padding: 8px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    #send-btn {
+        padding: 8px 16px; /* Reduce el padding del botón */
+    }
+}
+
